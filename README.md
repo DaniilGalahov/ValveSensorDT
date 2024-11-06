@@ -61,7 +61,7 @@ Pretty simple. Unzip it into a folder, and run ValveSensorDT.exe.
 **How to use**
 After starting the app
 1. From "Valve attitude" panel set up required attitude of a pipe with valve.
-2. Calibrate sensor. For this, in "Valve rotation" click "Reset" button to set valve into initial position, then in "Valve sensor" click "Calibrate" button to calibrate sensor.
+2. Calibrate sensor. For this, in "Valve rotation" click "Reset" button to set valve into initial position, then in "Valve sensor" click "Calibrate" button to calibrate sensor. *In some cases calibration does not passing because of oversimplified filter algorithm. If after calibration on "Valve sensor" panel value is not 0 or NaN, just click "Calibrate" button few more times.*
 3. Turn valve handle using "Valve rotation", and watch how sensor detects this.
 
 Of course, if you change valve attitude after this, sensor will loose calibration, so you'll need to calibrate it again.
