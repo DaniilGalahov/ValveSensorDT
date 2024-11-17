@@ -20,7 +20,7 @@ This function doing initial calibration of algorithm. It
 - builds basises of two coordinate systems (of the sensor and of the world)
 - then calculates quaternion of rotation between sensor CS and world CS. This quaternion is named **Qs2w**.
 - then calculates quaternion of rotation between X axis of sensor and "base direction" (sum of gravity and magnetic field vectors, projected on XZ plane of sensor). This quaternion is named **Q0**.
-- then function saving **Qs2W** and **Q0** for further usage.
+- then function saving **Qs2w** and **Q0** for further usage.
 
 ```
 (Vector3, float) CalculateRotation(Vector3 N, Vector3 G) {...}
@@ -39,15 +39,19 @@ But this filter is only for test purposes, for real applications I recommend to 
 4. In environments with unstable magnetic fields (workshops, near big electric motors) it'd be better to use a backup magnetic field source (big magnet placed near base of valve).
 
 ## Requirements
-### To run pre-compiled binary:
-- Windows 7/8/10 and higher
+### For web app
+Versions of Chrome, Firefox, Safari or Edge (Chromium-based) that are:  
+- WebGL 2.0 capable  
+- HTML 5 standards compliant  
+- 64-bit  
+- WebAssembly capable
 
 ## Usage
-### Use pre-compiled binary
-Zip archive with compiled app is [Binary\ValveSensorDT.zip](Binary/ValveSensorDT.zip).
+### Use web app
+Web app is available [here](https://www.nibrasgamestudio.com/valvesensordt/index.html). You may work with it through your web browser.
 
 **How to start?**
-Pretty simple. Unzip it into a folder, and run ValveSensorDT.exe.
+Pretty simple. Just go through link above and wait until Unity WebGL app starts in your browser.
 
 **Interface**
  1. *Panel "Valve attitude".* 3 controls here allow you to control spatial rotation of part of pipe with valve.
